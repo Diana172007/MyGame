@@ -44,21 +44,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.fish1)).BeginInit();
             this.SuspendLayout();
 
-            // bg1
             this.bg1.Location = new System.Drawing.Point(0, 0);
             this.bg1.Size = new System.Drawing.Size(850, 650);
             this.bg1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bg1.TabIndex = 0;
             this.bg1.TabStop = false;
 
-            // bg2
+            
             this.bg2.Location = new System.Drawing.Point(0, -650);
             this.bg2.Size = new System.Drawing.Size(850, 650);
             this.bg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bg2.TabIndex = 1;
             this.bg2.TabStop = false;
 
-            // player
+            
             this.player.Location = new System.Drawing.Point(385, 550);
             this.player.Size = new System.Drawing.Size(80, 60);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -66,25 +65,23 @@
             this.player.TabIndex = 2;
             this.player.TabStop = false;
 
-            // enemy1
+            
             this.enemy1.Location = new System.Drawing.Point(250, -400);
             this.enemy1.Size = new System.Drawing.Size(50, 50);
             this.enemy1.TabIndex = 3;
             this.enemy1.TabStop = false;
 
-            // enemy2
             this.enemy2.Location = new System.Drawing.Point(400, -130);
             this.enemy2.Size = new System.Drawing.Size(50, 50);
             this.enemy2.TabIndex = 4;
             this.enemy2.TabStop = false;
 
-            // fish1
+            
             this.fish1.Location = new System.Drawing.Point(300, -50);
             this.fish1.Size = new System.Drawing.Size(40, 40);
             this.fish1.TabIndex = 5;
             this.fish1.TabStop = false;
 
-            // coins
             this.coins.AutoSize = true;
             this.coins.BackColor = System.Drawing.Color.Transparent;
             this.coins.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -93,7 +90,6 @@
             this.coins.Text = "Рыбки: 0";
             this.coins.TabIndex = 6;
 
-            // labelRecord
             this.labelRecord.AutoSize = true;
             this.labelRecord.BackColor = System.Drawing.Color.Transparent;
             this.labelRecord.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -102,7 +98,6 @@
             this.labelRecord.Text = "Рекорд: 0";
             this.labelRecord.TabIndex = 7;
 
-            // labalLose
             this.labalLose.AutoSize = true;
             this.labalLose.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F);
             this.labalLose.ForeColor = System.Drawing.Color.Red;
@@ -111,7 +106,6 @@
             this.labalLose.Visible = false;
             this.labalLose.TabIndex = 8;
 
-            // buttonRestart
             this.buttonRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.buttonRestart.Location = new System.Drawing.Point(350, 350);
             this.buttonRestart.Size = new System.Drawing.Size(150, 50);
@@ -121,11 +115,10 @@
             this.buttonRestart.UseVisualStyleBackColor = true;
             this.buttonRestart.Click += new System.EventHandler(this.buttonRestart_Click);
 
-            // timer1
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
 
-            // Form1
+
             this.ClientSize = new System.Drawing.Size(850, 650);
             this.Controls.Add(this.buttonRestart);
             this.Controls.Add(this.labalLose);

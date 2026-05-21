@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace игра
 {
-    internal static class Program
+    static class Program
     {
-        [STAThread]
+        
         static void Main()
         {
             Application.EnableVisualStyles();

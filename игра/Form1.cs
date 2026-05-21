@@ -14,7 +14,6 @@ namespace игра
         private int record = 0;
         private SoundPlayer backgroundMusic;
         private SoundPlayer dieSound;
-
         public Form1()
         {
             InitializeComponent();
@@ -55,7 +54,7 @@ namespace игра
                     bg2.Image = new Bitmap(temp, 850, 650);
                 }
             }
-            var objectSize = 70;
+            var objectSize = 60;
 
    
             if (System.IO.File.Exists(playerPath))
@@ -155,19 +154,16 @@ namespace игра
         private Bitmap MakeLightYellowBackground(Bitmap original)
         {
             Bitmap result = new Bitmap(original.Width, original.Height);
-            for (int x = 0; x < original.Width; x++)
+            for (var x = 0; x < original.Width; x++)
             {
-                for (int y = 0; y < original.Height; y++)
+                for (var y = 0; y < original.Height; y++)
                 {
-                    Color pixel = original.GetPixel(x, y);
+                    var pixel = original.GetPixel(x, y);
                     if (pixel.A < 200 || (pixel.R > 200 && pixel.G > 200 && pixel.B > 200))
-                    {
                         result.SetPixel(x, y, Color.LightGoldenrodYellow);
-                    }
                     else
-                    {
                         result.SetPixel(x, y, pixel);
-                    }
+                    
                 }
             }
             return result;
@@ -189,7 +185,7 @@ namespace игра
         {
             if (dragging)
             {
-                Point currPoint = PointToScreen(new Point(e.X, e.Y));
+                var currPoint = PointToScreen(new Point(e.X, e.Y));
                 this.Location = new Point(currPoint.X - pos.X, currPoint.Y - pos.Y + bg1.Top);
             }
         }
@@ -266,7 +262,7 @@ namespace игра
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             if (lose) return;
-            int speed = 12;
+            var speed = 12;
             if ((e.KeyCode == Keys.Left || e.KeyCode == Keys.A) && player.Left > 200)
                 player.Left -= speed;
             else if ((e.KeyCode == Keys.Right || e.KeyCode == Keys.D) && player.Right < 650)
